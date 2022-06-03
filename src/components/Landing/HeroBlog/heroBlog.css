@@ -1,0 +1,144 @@
+.hero-blog-card {
+  display: none;
+  width: 100%;
+  height: auto;
+  min-height: 900px;
+  flex-direction: column;
+  margin-top: 2rem;
+  cursor: pointer;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
+}
+
+.hero-card-img {
+  height: 80%;
+  width: 100%;
+  /* background-image: url("./../../../assets/images/hero/hero-blog-image.jpg"); */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 1px 1px 3px gray;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card-img img {
+  width: 100%;
+  height: 100%;
+  /* height: 100%; */
+  margin: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero-img {
+  background-image: url("./../../../assets/images/hero/hero-blog-image.jpg");
+  height: 100% !important;
+}
+
+.hero-card-content {
+  height: 250px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+}
+
+.hero-card-content .hero-card-tag {
+  color: #00802b;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.hero-card-content .hero-card-title {
+  font-size: 1.35rem;
+  font-weight: 550;
+}
+
+.hero-card-content .hero-card-date {
+  text-transform: uppercase;
+  color: #5b5858d2;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.hero-card-content .hero-card-text {
+  line-height: 1.3rem;
+  letter-spacing: 0.4px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+.hero-card-content a {
+  color: black;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+.side-section {
+  display: none;
+  text-align: left;
+  padding: 0rem 1.5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.side-section h4 {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.453);
+  line-height: 2.5rem;
+  max-width: 350px;
+  width: 100%;
+}
+
+/* FROM THE BLOG - END */
+
+/* Tablet/Laptop Version 550*/
+@media only screen and (min-width: 550px) {
+  .hero-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 900px;
+    flex-direction: row;
+    margin-top: 2rem;
+    cursor: pointer;
+    /* justify-content: space-evenly; */
+    text-decoration: none;
+    color: black;
+  }
+
+  .hero-blog-card {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero-wrapper {
+    display: flex;
+  }
+
+  .side-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .hero-blog-card {
+    width: 70%;
+    height: 800px;
+    flex-direction: column;
+    margin-top: 5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+}

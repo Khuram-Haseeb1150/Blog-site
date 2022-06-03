@@ -1,0 +1,73 @@
+/* CATEGORIES */
+.categories-section {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+.categories-section .heading {
+  margin-bottom: 3.6rem;
+}
+
+.category-card {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#gadgets-category-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("./../../../assets/images/categories/gadgets-sm.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#marketing-category-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./../../../assets/images/categories/marketing-sm.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#trends-category-card {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url("./../../../assets/images/categories/trends-sm.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.category-card .button {
+  width: 7rem;
+  text-decoration: none;
+  height: 2.7rem;
+  outline: none;
+  font-size: 0.8rem;
+  border: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0px;
+  background: #196712;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.category-card .button:hover {
+  background-color: white;
+  color: #196712;
+}
+
+/* CATEGORIES - END */
+/* Tablet/Laptop Version 550*/
+@media only screen and (min-width: 550px) {
+  .categories-section {
+    display: none;
+  }
+}

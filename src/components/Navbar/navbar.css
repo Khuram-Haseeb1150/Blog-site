@@ -1,0 +1,161 @@
+/* Mobile Version */
+
+.navbar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.navbar span {
+  color: #00802b;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 8vh;
+  height: 50vh;
+  background: #00802bf1;
+  transform: translate(100%);
+  transition: all 0.4s ease-in;
+  opacity: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.nav-links li {
+  list-style: none;
+  opacity: 1;
+}
+
+.navbar .menu-icon {
+  width: 2rem;
+  height: 2rem;
+  pointer-events: none;
+}
+
+.menu-btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+
+.active-link {
+  color: #ffffff;
+}
+
+.nav-active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 999;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Tablet/Laptop Version 550*/
+@media only screen and (min-width: 550px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 350px;
+    align-items: center;
+    top: 0;
+    right: 0;
+    position: relative;
+    height: 8vh;
+    background: transparent;
+    transform: translateX(0px);
+    transition: none;
+    opacity: 1;
+  }
+
+  .nav-links a {
+    color: black;
+    font-weight: 400;
+    transition: all 0.2s ease;
+  }
+
+  .active-link {
+    color: #00802b !important;
+  }
+
+  .nav-links a:hover {
+    color: #00802b;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* PC 950*/
+.icons-container {
+  display: none;
+  width: 80px;
+  height: 8vh;
+  align-items: center;
+  margin-bottom: 0.2rem;
+  justify-content: space-around;
+}
+
+.icons-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.icons-container a:hover {
+  transform: scale(1.12);
+}
+
+@media only screen and (min-width: 950px) {
+  .navbar {
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  .nav-links {
+    margin-left: 7rem;
+  }
+
+  .icons-container {
+    display: flex;
+    margin-left: auto;
+  }
+}
